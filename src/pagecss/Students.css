@@ -1,0 +1,54 @@
+/* Students.css */
+.students-section {
+    font-family: Open Sans, sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    text-align: center; /* Center align the section */
+}
+
+.students-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem; /* Reduce bottom margin for closer spacing */
+    color: #094C09;
+}
+
+.students-section p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center; /* Center align the paragraph */
+}
+
+.red-arrow {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.student-categories {
+    display: flex;
+    justify-content: space-around; /* Distribute categories evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    text-align: left; /* Align text to the left within each category */
+}
+
+.student-category {
+    flex: 1;
+    margin: 0 1rem; /* Margin on left and right for spacing */
+    min-width: 250px; /* Minimum width for each category for responsiveness */
+}
+
+.student-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #094C09;
+}
+
+.student-category ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.student-category ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}

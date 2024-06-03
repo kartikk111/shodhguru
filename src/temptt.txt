@@ -1,0 +1,72 @@
+import React, { useState } from 'react';
+import './App.css';
+import homepage from './assets/homepage.png';
+import logo from './assets/header_logo.png';
+import orkg from './assets/orkg.png';
+import uat from './assets/uat.png';
+import aiisc from './assets/aiisc.png';
+import index from './assets/index.png';
+import swarm from './assets/SWARM.png';
+import resandt from './assets/resandt.png';
+
+function App() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  return (
+    <div className="App">
+      <header className="header">
+      <a href="home" className="logo-link">
+        <img src={logo} alt="Site Logo" className="logo" />
+      </a>
+        <nav className="navbar">
+          <a href="#home" className="nav-link">Home</a>
+          <a href="about" className="nav-link">About</a>
+          <a href="#services" className="nav-link">Services</a>
+          <a href="#students" className="nav-link">Students</a>
+          <a href="#our-team" className="nav-link">Our Team</a>
+          <a href="#training" className="nav-link">Training</a>
+          <div className="dropdown">
+            <button className="nav-link dropdown-toggle" onClick={toggleDropdown}>
+              Research4Good
+            </button>
+            {dropdownOpen && (
+              <div className="dropdown-menu">
+                <a href="#subitem1" className="dropdown-item">Subitem 1</a>
+                <a href="#subitem2" className="dropdown-item">Subitem 2</a>
+              </div>
+            )}
+          </div>
+          <a href="#contact-us" className="nav-link">Contact Us</a>
+        </nav>
+      </header>
+      <main className="main-content">
+        {/* <h1>ShodhGuru</h1>
+        <h2>Innovation and Research Labs</h2>
+        <p>"Grow with Knowledge"</p> */}
+        <div className="content-wrapper">
+          <div className="text-content">
+            <h1>ShodhGuru</h1>
+            <h2>Innovation and Research Labs</h2>
+            <p>"Grow with Knowledge"</p>
+          </div>
+          <img src={homepage} alt="Main Content Image" className="main-image" />
+        </div>
+      </main>
+      <footer className="footer">
+        <div className="partners">
+          <img src={aiisc} alt="AIISC" />
+          <img src={uat} alt="UAT" />
+          <img src={orkg} alt="Open Research Knowledge Graph" />
+          <img src={index} alt="Index" />
+          <img src={swarm} alt="SWARM" />
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;

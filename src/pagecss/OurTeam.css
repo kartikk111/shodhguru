@@ -1,0 +1,75 @@
+/* OurTeam.css */
+.ourteam-section {
+    font-family: Open Sans, sans-serif;
+    line-height: 1.4;
+    text-align: center;
+    padding: 2rem;
+    display: inline-block;
+}
+
+.ourteam-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #094C09;
+}
+
+.team-leaders, .team-members {
+    margin-bottom: 3rem;
+}
+
+.team-leaders h3, .team-members h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #094C09;
+}
+
+.team-member {
+    display: inline-block;
+    width: calc(50% - 4rem); /* Two members per row with margin */
+    margin: 1rem 2rem; /* margin on left and right */
+    vertical-align: top;
+}
+
+
+.team-member-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.team-member-details {
+    text-align: center;
+}
+
+.team-member-details h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member-details p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .team-member {
+        display: inline-flex;
+        flex-direction: column;
+        width: calc(50% - 4rem); /* Two members per row with margin */
+        margin: 1rem 2rem; /* margin on left and right */
+        display: inline-block;
+    }
+
+    .team-member-image {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    .team-member-details {
+        text-align: center;
+    }
+}

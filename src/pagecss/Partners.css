@@ -1,0 +1,27 @@
+/* Partners.css */
+.partners-section {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    display: wrap;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.partners-section h2 {
+    color: #094C09;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.partners-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.partners-section li {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
