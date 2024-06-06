@@ -1,6 +1,6 @@
 import React from 'react';
 import '../pagecss/Partners.css';
-import cairNepalImage from '../assets/cair-nepal.png'; // Adjust the path as needed
+import cairNepalImage from '../assets/cair-nepal.png';
 import leadSemanticsImage from '../assets/lead-semantics.png'; 
 
 const Partners = () => {
