@@ -1,12 +1,25 @@
-/* Partners.css */
 .partners-section {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     padding: 2rem;
-    display: wrap;
+    display: inline-flex;
     text-align: left;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    gap: 2rem;
+}
+
+.partners-content {
+    flex: 3;
+}
+
+.partners-images {
+    flex: 1;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
 }
 
 .partners-section h2 {
@@ -24,4 +37,11 @@
     font-size: 1rem;
     color: #000;
     margin-bottom: 0.5rem;
+}
+
+.partners-section img {
+    margin-left: 75px;
+    width: 275px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 1rem;
 }
